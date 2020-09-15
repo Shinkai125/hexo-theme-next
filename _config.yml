@@ -52,14 +52,14 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2015
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
@@ -67,7 +67,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -88,7 +88,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
+  post: true
   language:
 
 
@@ -97,9 +97,9 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
@@ -117,10 +117,13 @@ darkmode: false
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
+  image: /image/ || fa fa-image
+  music: /music/ || fa fa-music
+  shuoshuo: /shuoshuo/ || fa fa-heartbeat
+  about: /about/ || fa fa-user
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -163,11 +166,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: https://i.loli.net/2020/08/25/NrIpckD9qPLY38C.jpg #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -177,9 +180,10 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  GitHub: https://github.com/sunyancn || fab fa-github
+  E-Mail: mailto:sunyanhust@163.com || fa fa-envelope
+  RSS: /atom.xml || fas fa-rss
+  Weibo: https://weibo.com/u/5270232660 || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -255,19 +259,19 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
-  #comment: Donate comment here.
+  comment: 支持一根棒棒糖！
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: https://i.loli.net/2020/08/27/Z63uzPfeimEYrD2.png
+  alipay: https://i.loli.net/2020/08/27/Zz62YJyVH1SRgGj.jpg
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -282,11 +286,11 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
-  title: # Custom header, leave empty to use the default one
+  enable: true
+  title: 相关文章推荐 # Custom header, leave empty to use the default one
   display_in_home: false
   params:
-    maxCount: 5
+    maxCount: 2
     #PPMixingRate: 0.0
     #isDate: false
     #isImage: false
@@ -354,21 +358,21 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal
+  highlight_theme: night
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 back2top:
   enable: true
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -380,7 +384,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -408,7 +412,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -421,30 +425,31 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
-    size:
+    family: Noto Serif SC
+    size: 
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family:
+    family: 
     size:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
+    family: 
     size:
 
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family:
+    family: Noto Serif SC
+    size: 0.85em
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: 
 
 
 # ---------------------------------------------------------------
@@ -496,11 +501,11 @@ math:
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
-  per_page: true
+  per_page: false
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem: false
 
@@ -566,7 +571,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
+  active: valine
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -610,19 +615,19 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true
+  appid: IAIsNxUL4BLqJ2c4nTn8HlLv-gzGzoHsz # Your leancloud application appid
+  appkey: 73p5IVTPonVrJhOylbVtJffi # Your leancloud application appkey
   notify: false # Mail notifier
   verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
+  placeholder: (๑•́ ₃ •̀๑) 留言时填写您的邮箱可以邮件收到博主的回复噢~ # Comment box placeholder
+  avatar: wavatar # Gravatar style
+  guest_info: nick,mail # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
   visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: false # Whether to record the commenter IP
+  comment_count: false # If false, comment count will only be displayed in post page, not in home page
+  recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
 
@@ -739,7 +744,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -855,14 +860,14 @@ pace:
 three:
   enable: false
   three_waves: false
-  canvas_lines: false
-  canvas_sphere: false
+  canvas_lines: true
+  canvas_sphere: true
 
 # Canvas-ribbon
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
 # For more information: https://github.com/zproo/canvas-ribbon
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
@@ -892,7 +897,7 @@ vendors:
 
   # MathJax
   # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  mathjax:
+  mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
   # KaTeX
   # katex: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
@@ -942,7 +947,7 @@ vendors:
   # Valine
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
   # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js
-  valine:
+  valine: https://cdn.jsdelivr.net/gh//AshinWang/SimpleValine/SimpleValine.min.js
 
   # Gitalk
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
@@ -984,14 +989,33 @@ vendors:
   # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
   three:
   three_waves:
-  canvas_lines:
-  canvas_sphere:
+  canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
+  canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
 
   # Internal version: 1.0.0
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
-  canvas_ribbon:
+  canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
+
+anchor:
+  enable: true
+  color: '#0e83cd'
+  position: right # If left, anchors will always be visible.
+  margin: 7px 
+  text: '#'
+  icon:
+    # If true, the `text` option will be ignored.
+    enable: false 
+    # By default, NexT has built-in FontAwesome support.
+    # This option means `font-family: FontAwesome`, so DO Not change it.
+    # Also you can choose ForkAwesome, but that's another story.
+    font: FontAwesome
+    content: \f0c1 # CSS content for FontAwesome & ForkAwesome.
 
 # Assets
 css: css
 js: js
 images: images
+
+# # Online contact
+# daovoice: false
+# daovoice_app_id: 8f3c3ecb   # 这里填你刚才获得的 app_id

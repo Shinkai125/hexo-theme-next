@@ -253,6 +253,7 @@
         <div class="post-eof"></div>
       </footer>
     {%- endif %}
+    <script type="text/javascript" src="/js/linkcard.js"></script>
   </article>
   {######################}
   {### END POST BLOCK ###}
