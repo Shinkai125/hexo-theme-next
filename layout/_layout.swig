@@ -7,6 +7,9 @@
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+  {% if theme.leafacePlayer.enable %}
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  {% endif %}
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -56,5 +59,12 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
+
+    <!-- leafacePlayer -->
+  {% if theme.leafacePlayer.enable %}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.0.0/dist/jquery.min.js"></script>
+    <script id="lfz" src="https://www.leaface.top/player/player.js" key=1306645603559337985></script>
+  {% endif %}
+  
 </body>
 </html>

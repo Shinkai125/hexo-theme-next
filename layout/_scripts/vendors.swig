@@ -41,11 +41,6 @@
   <script size="{{ theme.canvas_ribbon.size }}" alpha="{{ theme.canvas_ribbon.alpha }}" zIndex="{{ theme.canvas_ribbon.zIndex }}" src="{{ canvas_ribbon_uri }}"></script>
 {%- endif %}
 
-{%- for name, internal in js_vendors %}
-  {%- set internal_script = next_vendors(internal) %}
-  <script src="{{ theme.vendors[name] or internal_script }}"></script>
-{%- endfor %}
-
 {# Customize darkmode.js - Declaration #}
 {%- if theme.darkmode_js %}
   {# another way load js from CDN

@@ -54,5 +54,6 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
+  loadMeting();
 });
 </script>

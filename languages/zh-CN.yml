@@ -6,15 +6,20 @@ title:
   tag: 标签
   schedule: 日程表
 menu:
-  home: 首页
-  archives: 归档
-  categories: 分类
-  tags: 标签
-  about: 关于
-  search: 搜索
+  home: 站点首页
+  archives: 文章总览
+  categories: 文章分类
+  tags: 文章标签
+  about: 关于更多
+  search: 全站搜索
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益 404
+  image: 光影留痕
+  music: 音乐视频
+  reading: 书海泛舟
+  movie: 观影历史
+  shuoshuo: 时光拾忆
 sidebar:
   overview: 站点概览
   toc: 文章目录
